@@ -1,5 +1,6 @@
-# S3_copy
-### this short program suppose to copy data between two buckets
+# S3_copy  
+ This short program suppose to copy data between two buckets.   
+ It was customized to address some specific requirements and conditions to take into accoutn of transferred data. 
 
 ## prerequisities 
  - s3 credentails in ``` ~/.aws/credential ```
@@ -32,9 +33,7 @@ Copied store/c.mp4 to msrogoncikmail-test2
 ```
 
 ## summary
-the program was built with focus on functionality only  
-there is no additioanl error handling  
-  (as there was not closely specified whether for example 3TB should be trasferred, or destination is limited to max 3 TB, .. whether to overwrite files if they already exist, whether it should be considered as error when nothing has been found for transfer... )
-also no security measurements has been taken into account  
-(root key or app key to be used, target file ACL .. )
+The program was built with focus on functionality only.  
+There is no additioanl error handling.  (as there was not closely specified whether for example 3TB should be trasferred, or destination is limited to max 3 TB, .. whether to overwrite files if they already exist, whether it should be considered as error when nothing has been found for transfer... )  
+Also no security measurements has been taken into account. (root key or app key to be used, target file ACL .. )
 
