@@ -3,8 +3,9 @@
 
 ## prerequisities
  - s3 credentails in ~/.aws/credential
+ - existence of source and target buckets
  - installed boto3 library '''pip install boto3'''
- - running within python virt. env ''' python -m venv .venv; source .venv/bin/activate '''
+ - running within python virt. env ''' python -m venv .venv; source .venv/bin/activate ''' is recommended
 
 ## variables
 - SOURCE_BUCKET_NAME = "msrogoncikmail-test1"                   
@@ -17,7 +18,6 @@
 ## pools to avoit due to slowlynes:
  - "DEEP_ARCHIVE"
  - "GLACIER"
-
 
 ## example run: 
 ```
@@ -32,7 +32,9 @@ Copied store/c.mp4 to msrogoncikmail-test2
 ```
 
 ## summary
-the program was built with focus on functionality only,
-there is no additioanl error handling (as there was not closely specified whether for example 3TB should be trasferred, or destination is limited to max 3 TB, .. whether to overwrite files if they already exist, whether it should be considered as error when nothing has been found for transfer... )
-also no security measurements has been taken into account (root key or app key to be used, target file ACL .. )
+the program was built with focus on functionality only  
+there is no additioanl error handling  
+  (as there was not closely specified whether for example 3TB should be trasferred, or destination is limited to max 3 TB, .. whether to overwrite files if they already exist, whether it should be considered as error when nothing has been found for transfer... )
+also no security measurements has been taken into account  
+(root key or app key to be used, target file ACL .. )
 
