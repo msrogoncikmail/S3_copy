@@ -1,16 +1,16 @@
 # S3_copy
 ### this short program suppose to copy data between two buckets
 
-## prerequisities
- - s3 credentails in ~/.aws/credential
+## prerequisities 
+ - s3 credentails in ``` ~/.aws/credential ```
  - existence of source and target buckets
- - installed boto3 library '''pip install boto3'''
- - running within python virt. env ''' python -m venv .venv; source .venv/bin/activate ''' is recommended
+ - installed boto3 library ``` pip install boto3 ```
+ - running within python virt. env ``` python -m venv .venv; source .venv/bin/activate ``` is recommended
 
 ## variables
-- SOURCE_BUCKET_NAME = "msrogoncikmail-test1"                   
+- SOURCE_BUCKET_NAME = "myproduction-bucket"                   
 - SOURCE_DIRECTORY = "store/"
-- DESTINATION_BUCKET_NAME = "msrogoncikmail-test2"
+- DESTINATION_BUCKET_NAME = "mytest-bucket"
 - EXTENSION_TO_COPY = ".mp4"
 - MAX_SIZE_TRANSFER = 3221225472  (3GB)
 .. self-explanatory
